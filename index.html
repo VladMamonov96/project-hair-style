@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Hair Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+</head>
+<body>
+<main>
+  <div class="swiper swiper-vertical">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="first-slide">
+            <div class="title ellipse">
+              <h1>ФЕН И СТАЙЛЕР </h1>
+              <p>в уникальном дизайне</p>
+            </div>
+            <div class="info-block">
+              <div class="dryer ellipse">
+                <div class="info-label small">
+                  <span>Фен</span>
+                </div>
+                <img src="./src/assets/image/dryer.png" alt="dryer">
+              </div>
+              <div class="hair ">
+                <div class="info-label">
+                  <span>2 в 1</span>
+                </div>
+                <img src="./src/assets/image/hair.png" alt="hair">
+              </div>
+              <div class="styler ellipse">
+                <div class="info-label small">
+                  <span>Стайлер</span>
+                </div>
+                <img src="./src/assets/image/styler.png" alt="styler">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="second-slide ellipse">
+            <div class="star">
+              <span>Не тяжелее чашки кофе</span>
+            </div>
+            <img src="./src/assets/image/girl.png" alt="girl">
+            <div class="info-text">
+              <h2>супер-лёгкий</h2>
+              <p>Уменьшает усталость рук при сушке волос, делая процедуру удобной и приятной даже после
+                напряжённого рабочего дня.</p>
+              <div class="info-label">
+                <span>500 г</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="third-slide">
+            <div class="third-slide__video">
+              <img src="src/assets/image/camera.png" alt="camera">
+              <img src="src/assets/image/video-text.png" alt="Video">
+              <img src="src/assets/image/image-text.png" alt="Text">
+            </div>
+            <div class="info-text">
+              <h2>супер-компактный</h2>
+              <p>Благодаря складной конструкции — он легко убирается в сумочку и его
+                можно брать в путешествия</p>
+              <img src="./src/assets/image/image.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container">Slide 1</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container">Slide 1</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container">Slide 1</div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</main>
+
+<script type="module" src="/src/main.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    let swiper = new Swiper(".swiper-vertical", {
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+            clickable: true,
+        },
+    });
+</script>
+
+</body>
+
+
+

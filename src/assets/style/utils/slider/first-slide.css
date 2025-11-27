@@ -1,0 +1,19 @@
+.first-slide .title {
+  text-align: center;
+  color: var(--dark-grey);
+}
+.first-slide .title h1, .first-slide .title p {
+  font-size: 48px;
+  font-weight: 600;
+}
+.first-slide .title.ellipse:after {
+  content: "";
+  background-image: url("../../../image/ellipse-white.png");
+  width: 670px;
+  height: 460px;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/*# sourceMappingURL=first-slide.css.map */

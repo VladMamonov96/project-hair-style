@@ -1,0 +1,13 @@
+.third-slide {
+  display: flex;
+}
+.third-slide__video {
+  display: flex;
+  flex-direction: column;
+}
+.third-slide .text-info img {
+  width: 310px;
+  height: 310px;
+}
+
+/*# sourceMappingURL=third-slide.css.map */

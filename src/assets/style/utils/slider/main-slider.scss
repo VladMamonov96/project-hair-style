@@ -1,0 +1,22 @@
+@use 'first-slide';
+@use 'second-slide';
+@use 'third-slide';
+
+.swiper {
+  background: var(--default-background);
+  width: 100%;
+  height: 100%;
+
+  &-vertical {
+    .swiper-pagination {
+      left: 14px;
+    }
+  }
+
+  &-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

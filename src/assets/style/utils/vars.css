@@ -1,0 +1,89 @@
+:root {
+  --transparent: transparent;
+  --radius-ten: 10px;
+  --radius-eigh: 8px;
+  --radius-four: 4px;
+  --transition: all 0.4s ease-in-out;
+  --light-green: #2cb5b9;
+  --white: #ffffff;
+  --grey: #7f848c;
+  --black: #2a313c;
+  --red: #eb5757;
+  --blue: #2f80ed;
+  --yellow: #fbba23;
+  --green: #65bb5c;
+  --light-pink: #ff8767;
+  --pink: #ff5a93;
+  --font-family: "GothamPro";
+  --shadow-inset-error: inset -3px -3px 3px var(--red),
+    inset 3px 3px 3px var(--red), 0 0 0 var(--red), 0 0 0 var(--red);
+  --shadow-error: inset 0 0 0 var(--red), inset 0 0 0 var(--red),
+    -4px -2px 8px var(--red), 4px 2px 8px var(--red);
+  --shadow-secondary: inset 0 0 0 #1b2027, inset 0 0 0 #3e4551,
+    4px 2px 6px #1b2027, -4px -2px 6px #3e4551;
+  --shadow-secondary-inset: inset 2px 2px 3px #1b2027,
+    inset -1px -1px 3px #3e4551, 0 0 0 #1b2027, 0 0 0 #3e4551;
+}
+
+[data-theme=light] {
+  --background-main: none;
+  --gradient: linear-gradient(96.02deg, #00b047 0%, #4cd784 100%);
+  --gradient-secondary: linear-gradient(134.83deg, #363c46, #1d2531);
+  --primary: #00b047;
+  --primary-transition: #00b0474c;
+  --secondary: #d9e1e8;
+  --secondary-transparent: #d9e1e8a5;
+  --ternary: #7f848c;
+  --quaternary: #363c46;
+  --fifth: #c7d0d8;
+  --sixth: #ffffff;
+  --seventh: #e8edf1;
+  --eighth: #a6abaf;
+  --ninth: #e9c1c1;
+  --tenth: #23262c;
+  --eleventh: #cfd7dd;
+  --twelfth: linear-gradient(124.83deg, #d9e1e8, #ccd8e2);
+  --shadow-inset-autofill: inset 0 0 0 50px #e8edf1;
+  --shadow-inset-autofill-error: inset 0 0 0 20px #e9c1c1;
+  --shadow: inset 0 0 0 #ffffff, inset 0 0 0 rgba(136, 165, 191, 0.48),
+    -4px -2px 8px #ffffff, 4px 2px 4px rgba(136, 165, 191, 0.54);
+  --shadow-inset: inset -3px -3px 3px #ffffff,
+    inset 3px 3px 3px rgba(136, 165, 191, 0.48), 0 0 0 #ffffff,
+    0 0 0 rgba(136, 165, 191, 0.54);
+  --shadow-primary: inset 0 0 0 #16c85d, inset 0 0 0 #209e53,
+    -2px -2px 6px #16c85d, 2px 2px 6px #209e53;
+  --shadow-primary-inset: inset -2px -2px 6px #16c85d, inset 2px 2px 6px #209e53,
+    0 0 0 #16c85d, 0 0 0 #209e53;
+}
+
+[data-theme=dark] {
+  --background-main: #252525 url("../images/main-fon.png") no-repeat center;
+  --gradient: linear-gradient(90.59deg, #00f9c9 0%, #1ee3bf 100%);
+  --gradient-secondary: linear-gradient(134.83deg, #36393d, #2a2d30);
+  --primary: #00f9c9;
+  --primary-transition: rgba(0, 249, 201, 0.3);
+  --secondary: #1a1a1ad1;
+  --secondary-transparent: rgba(26, 26, 26, 0.65);
+  --ternary: #d9e1e8;
+  --quaternary: #ffffff;
+  --fifth: #170d2b;
+  --sixth: #363c46;
+  --seventh: #252525d6;
+  --eighth: #706f74;
+  --ninth: #463030;
+  --tenth: #575757;
+  --eleventh: #515359;
+  --twelfth: linear-gradient(124.83deg, #4e4e4e, #2b2b2b);
+  --shadow-inset-autofill: inset 0 0 0 50px #252525;
+  --shadow: inset 0 0 0 #515359, inset 0 0 0 #070707, -4px -2px 4px #515359,
+    4px 2px 4px #070707;
+  --shadow-inset: inset -3px -3px 3px #515359, inset 3px 3px 3px #070707,
+    0 0 0 #515359, 0 0 0 #070707;
+  --shadow-primary: inset 0 0 0 #46fddb, inset 0 0 0 #34e2c1,
+    -2px -2px 6px #46fddb, 2px 2px 6px #34e2c1;
+  --shadow-primary-inset: inset -2px -2px 6px #46fddb, inset 2px 2px 6px #34e2c1,
+    0 0 0 #46fddb, 0 0 0 #34e2c1;
+  --shadow-inset-autofill-error: inset 0 0 0 20px #463030;
+}
+
+/*# sourceMappingURL=vars.css.map */

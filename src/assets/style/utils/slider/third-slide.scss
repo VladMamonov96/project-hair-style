@@ -1,0 +1,28 @@
+.third-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  &__video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-text {
+    max-width: 460px;
+
+    h2 {
+      margin-bottom: 44px;
+    }
+
+    p {
+      margin-bottom: 55px;
+    }
+
+    img {
+      width: 310px;
+      height: 310px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.second-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.ellipse:after {
+    content: '';
+    background-image: url("../../../image/ellipse-orange__second.png");
+    width: 906px;
+    height: 800px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .info-text {
+    max-width: 280px;
+
+    h2 {
+      margin-bottom: 34px;
+    }
+
+    p {
+      margin-bottom: 39px;
+    }
+  }
+
+  .star {
+    left: 43px;
+    top: 35px;
+    transform: rotate(-14deg);
+  }
+}
