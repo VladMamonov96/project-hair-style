@@ -1,16 +1,26 @@
 .third-slide {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
+  &:after{
+    content: "";
+    background-image: url(/src/assets/image/ellipse-pink__second.png);
+    width: 850px;
+    height: 675px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+  }
 
   &__video {
-    display: flex;
-    flex-direction: column;
+    width: 530px;
   }
 
   .info-text {
     max-width: 460px;
+    margin-right: 133px;
 
     h2 {
       margin-bottom: 44px;

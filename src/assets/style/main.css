@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
 html,
 body,
@@ -201,6 +202,12 @@ input[type=number]::-webkit-outer-spin-button {
   --white: #FFFFFF;
   --orange: #FF976A;
   --dark-grey: #4B4B4B;
+  --grey‑beige: #7F7875;
+  --grey-neutral: #ADACAC;
+  --grey‑brown: #746D68;
+  --muted-grey‑brown: #726965;
+  --light-neutral-grey: #DBDBDB;
+  --neutral-medium-grey: #737373;
   --br-70: 70px;
   --br-50: 50px;
   --br-34: 34px;
@@ -332,15 +339,25 @@ input[type=number]::-webkit-outer-spin-button {
 .third-slide {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
 }
+.third-slide:after {
+  content: "";
+  background-image: url(/src/assets/image/ellipse-pink__second.png);
+  width: 850px;
+  height: 675px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+}
 .third-slide__video {
-  display: flex;
-  flex-direction: column;
+  width: 530px;
 }
 .third-slide .info-text {
   max-width: 460px;
+  margin-right: 133px;
 }
 .third-slide .info-text h2 {
   margin-bottom: 44px;
@@ -351,6 +368,62 @@ input[type=number]::-webkit-outer-spin-button {
 .third-slide .info-text img {
   width: 310px;
   height: 310px;
+}
+
+.fourth-slide {
+  padding-top: 53px;
+  padding-right: 67px;
+  background: url("../../../image/img.png");
+  background-size: cover;
+  height: 100%;
+  text-align: end;
+}
+.fourth-slide h2 {
+  font-size: 45px;
+  color: var(--dark-grey);
+  line-height: 122%;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.fourth-slide span {
+  font-size: 35px;
+  color: var(--neutral-medium-grey);
+}
+.fourth-slide .star {
+  right: 46px;
+  bottom: 38px;
+}
+.fourth-slide .star span {
+  color: var(--white);
+}
+
+.fifth-slide {
+  background: url("../../../image/lamination.png");
+  background-size: cover;
+  height: 100%;
+}
+.fifth-slide .star {
+  width: 234px;
+  height: 234px;
+  background-size: cover;
+  flex-direction: column;
+}
+.fifth-slide .star strong {
+  font-size: 25px;
+  margin-top: 100px;
+}
+.fifth-slide .star span {
+  font-size: 20px;
+}
+.fifth-slide .star__positive {
+  background-image: url("../../../image/star-positive.png");
+  right: 174px;
+  top: 138px;
+}
+.fifth-slide .star__negative {
+  background-image: url("../../../image/star-negative.png");
+  top: 264px;
+  right: 37px;
 }
 
 .swiper {

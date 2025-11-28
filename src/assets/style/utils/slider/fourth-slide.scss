@@ -1,0 +1,29 @@
+.fourth-slide {
+  padding-top: 53px;
+  padding-right: 67px;
+  background: url("../../../image/img.png");
+  background-size: cover;
+  height: 100%;
+  text-align: end;
+
+  h2 {
+    font-size: 45px;
+    color: var(--dark-grey);
+    line-height: 122%;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  span {
+    font-size: 35px;
+    color: var(--neutral-medium-grey);
+  }
+
+  .star {
+    right: 46px;
+    bottom: 38px;
+    span{
+      color: var(--white)
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.fifth-slide {
+  background: url("../../../image/lamination.png");
+  background-size: cover;
+  height: 100%;
+
+  .star {
+    width: 234px;
+    height: 234px;
+    background-size: cover;
+    flex-direction: column;
+
+    strong {
+      font-size: 25px;
+      margin-top: 100px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    &__positive {
+      background-image: url("../../../image/star-positive.png");
+      right: 174px;
+      top: 138px;
+    }
+
+    &__negative {
+      background-image: url("../../../image/star-negative.png");
+      top: 264px;
+      right: 37px;
+    }
+  }
+
+}
