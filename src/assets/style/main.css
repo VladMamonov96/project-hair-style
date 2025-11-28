@@ -431,6 +431,21 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 100%;
 }
+.swiper-pagination-bullets-dynamic {
+  overflow: unset;
+}
+.swiper-pagination:after {
+  content: "";
+  position: absolute;
+  background: url("../../../image/icon/line.png");
+  height: 700px;
+  width: 130px;
+  background-size: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -14px;
+  z-index: -1;
+}
 .swiper-vertical .swiper-pagination {
   left: 14px;
 }
@@ -438,6 +453,25 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pagination {
+  width: 74px;
+  height: 74px;
+  opacity: 1;
+  background: var(--grey‑brown);
+  border-radius: var(--br-50);
+  box-shadow: 16px 14px 15px 0 #625B56;
+  transform: scale(1) !important;
+}
+.pagination.swiper-pagination-bullet-active {
+  left: 97px;
+  width: 103px;
+  height: 103px;
+  background: var(--grey-neutral);
+}
+.pagination.swiper-pagination-bullet-active-prev, .pagination.swiper-pagination-bullet-active-next {
+  left: 68px;
 }
 
 html,
