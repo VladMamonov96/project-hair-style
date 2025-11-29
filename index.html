@@ -8,9 +8,9 @@
 </head>
 <body>
 <main>
-  <div class="swiper swiper-vertical">
+  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div data-icon="./src/assets/image/icon/dryer.svg" data-label="фен-стайлер 2 в 1" class="swiper-slide">
         <div class="container">
           <div class="first-slide">
             <div class="title ellipse">
@@ -41,7 +41,7 @@
 
         </div>
       </div>
-      <div class="swiper-slide">
+      <div data-icon="./src/assets/image/icon/feather.svg" data-label="суперлёгкий" class="swiper-slide">
         <div class="container">
           <div class="second-slide ellipse">
             <div class="star">
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div data-icon="./src/assets/image/icon/bag.svg" data-label="суперкомпактный" class="swiper-slide">
         <div class="container">
           <div class="third-slide ellipse">
             <div class="third-slide__video">
@@ -74,7 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div data-icon="./src/assets/image/icon/motor.svg" data-label="Инновационный понский мотор" class="swiper-slide">
         <div class="container">
           <div class="fourth-slide">
             <h2>Для ценителей комфорта <br> и качества в уходе за волосами</h2>
@@ -85,7 +85,8 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div data-icon="./src/assets/image/icon/2mln.svg" data-label="ЭФФЕКТ САЛОННОГО ЛАМИНИРОВАНИЯ"
+           class="swiper-slide">
         <div class="container">
           <div class="fifth-slide">
             <div class="star star__negative">
@@ -99,13 +100,28 @@
           </div>
         </div>
       </div>
-
+      <div data-icon="./src/assets/image/icon/auto.svg" data-label='9 ПЕРСОНАЛЬНЫХ НАСТРОЕК: ОТ КЛАССИКИ ДО КРЕАТИВА'
+           class="swiper-slide">
+        <div class="container">
+        </div>
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="ring-wrapper">
+    <svg class="progress-ring" width="300" height="300">
+      <circle class="progress-bg" cx="150" cy="150" r="140"></circle>
+    </svg>
+
+    <div class="ring">
+      <div class="bullets"></div>
+    </div>
+    <div class="slide-label"></div>
   </div>
 </main>
-
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>-->
 <script type="module" src="/src/main.js"></script>
+
 </body>
 
 
