@@ -54,19 +54,26 @@ function buildRing(swiper) {
     }
 }
 
+
 function updateActive(swiper) {
     const idx = swiper.activeIndex;
 
-    document.querySelectorAll('.bullet').forEach(b => {
-        b.classList.toggle('active', Number(b.dataset.index) === idx);
+    const ring = document.querySelector('.ring');
+    const angle = idx * (360 / swiper.slides.length);
+
+    // вращаем овал
+    ring.style.transform = `rotate(${-angle}deg)`;
+
+    // выделяем активную точку
+    document.querySelectorAll('.bullet').forEach((b, i) => {
+        b.classList.toggle('active', i === idx);
+
+        // Угол каждой точки — для компенсации переворота
+        const itemAngle = i * (360 / swiper.slides.length);
+        b.style.setProperty('--angle', `-${itemAngle}deg`);
     });
 
-    // Вращаем кольцо так, чтобы активная точка оказалась сверху
-    const ring = document.querySelector('.ring');
-    const angle = -(idx * (360 / swiper.slides.length));
-    ring.style.transform = `rotate(${angle}deg)`;
-
-    // Подпись
-    let slideLabel = swiper.slides[idx].dataset.label;
-    document.querySelector('.slide-label').textContent = slideLabel;
+    // подпись
+    const label = swiper.slides[idx].dataset.label;
+    document.querySelector('.slide-label').textContent = label;
 }
